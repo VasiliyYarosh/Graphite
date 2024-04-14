@@ -22,7 +22,7 @@ body{
 
 .main {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   background-image: url(./images/background.png);
   background-size: cover;
   background-position: center;
@@ -33,32 +33,62 @@ body{
   align-items: center;
 }
 
+@media screen and (min-width: 600px) {
+  .main {
+    padding: 0;
+  }
+}
+
+
 .main__title {
   font-family: Oswald;
-  font-size: 62px;
+  font-size: 30px;
   font-weight: 400;
-  line-height: 80.6px;
+  line-height: 40.6px;
+  text-align: center;
   color: var(--orange-text-color);
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 600px) {
+  .main__title {
+  font-size: 62px;
+  line-height: 80.6px;
+  }
+}
+
 .main__congradulations {
   font-family: Oswald;
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 400;
-  line-height: 47.42px;
+  line-height: 30.42px;
   text-align: center;
   color: var(--white-text-color); 
   margin: 0px;
 }
 
+@media screen and (min-width: 600px) {
+  .main__congradulations {
+    font-size: 32px;
+    line-height: 47.42px;
+  }
+}
+
 .main__text {
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 31.2px;
+  line-height: 25.2px;
   text-align: center;
   color: var(--white-text-color); 
+}
+
+
+@media screen and (min-width: 600px) {
+  .main__text {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
 }
 
 .main__attention {
@@ -73,8 +103,14 @@ body{
 .form {
   border: 1px solid var(--white-text-color);
   border-radius: 20px;
-  padding: 50px;
+  padding: 15px;
   background-color: rgba(20, 20, 20, 0.9);
+}
+
+@media screen and (min-width: 600px) {
+  .form {
+    padding: 50px;
+  }
 }
 
 .form__item {
@@ -174,3 +210,4 @@ body{
   background-color: rgba(20, 20, 20, 1);
   color: var(--input-error-color);
 }
+
