@@ -6,13 +6,12 @@
     <title>BVG Graphite - ЗАЯВКА</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-      rel="preconnect"
+       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin
     >
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
-    <base href="https://vasiliyyarosh.github.io/Graphite/">
   </head>
   <body>
     <main class="main">
@@ -26,15 +25,18 @@
         часом.
       </p>
       <form
-        action=""
-        method=""
+        action="https://api.web3forms.com/submit" 
+        method="POST"
         class="form"
       >
+        <input type="hidden" name="access_key" value="c2f2bda4-45be-4559-b01f-ab79ee2ae7ca">
+
         <div class="form__item">
           <input
             class="form__input"
             type="text"
             placeholder="Ваші ПІБ"
+            name="name"
             required
           />
         </div>
@@ -43,6 +45,7 @@
           <input
             class="form__input"
             type="text"
+            name="company"
             placeholder="Яку компанію ви представляєте?"
             required
           />
@@ -53,6 +56,7 @@
             class="form__input"
             type="text"
             placeholder="Яка Ваша посада?"
+            name="chin"
             required
           />
         </div>
@@ -61,6 +65,7 @@
           <p class="form__text">Опишіть коротко питання, з яким ви бажаєте
             звернутися до команди нашого проєкту?</p>
           <textarea
+            name="describe"
             class="form__textarea"
             required
           ></textarea>
@@ -90,6 +95,7 @@
             class="form__input"
             autocomplete="one-time-code"
             type="email"
+            name="email"
             id="email"
             placeholder="Електронна пошта"
             autocomplete="off"
